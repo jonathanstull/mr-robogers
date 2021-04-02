@@ -1,13 +1,16 @@
 // Utility logic
 
-const input = [];
+const input = [0];
 
 // Business logic
 
 function robogerize() {
-  let outputStr = input.toString();
+  let inputStr = input.toString();
   let output = [];
-  if (outputStr === "") {
+  if (inputStr === "") {
+    return output;
+  } else if (input[0] === 0) {
+    output.push(input[0]);
     return output;
   } else {
     return "I am a banana";
