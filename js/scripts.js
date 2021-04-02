@@ -1,23 +1,7 @@
 // Utility logic
 
 let outputArray = [];
-
-function createArray(int) {
-  let input = parseInt(int);
-  if (isNaN(input)) {
-    return "Beep! Boop! Not a number, neighbor. Please try again.";
-  } else if (input >= 0) {
-    outputArray.unshift(input);
-    let newInput = input - 1;
-    while (newInput >= 0) {
-      outputArray.unshift(newInput)
-      newInput = newInput - 1;
-    };
-  } else {
-    return "I am a banana";
-  };
-  return outputArray;
-};
+let monologue;
 
 function convertArray(array) {
   array.forEach(function(int) {
@@ -32,12 +16,38 @@ function convertArray(array) {
   return array;
 };
 
+function robogersArray(int) {
+  let input = parseInt(int);
+  if (isNaN(input) === true) {
+    return outputArray = ["Beep! Boop! Not a number, neighbor. Please try again."];
+  } else if ((isNaN(input) === false) && (input >= 0)) {
+    outputArray.unshift(input);
+    let newInput = input - 1;
+    while (newInput >= 0) {
+      outputArray.unshift(newInput)
+      newInput = newInput - 1;
+    };
+  };
+  return convertArray(outputArray);
+};
+
 // Business logic
 
 function robogerize(int) {
-  outputArray = createArray(int);
-  convertArray(outputArray);
+  robogersArray(int);
   return outputArray.join(" ");
 };
 
 // User interface logic
+
+$(document).ready(function() {
+  $("#robogerize").submit(function(event) {
+    event.preventDefault();
+    let int = $("#int").val();
+    const monologue = robogerize(int);
+
+    $("#monologue").text(monologue);
+
+    $("#monologue").show();
+  });
+});
