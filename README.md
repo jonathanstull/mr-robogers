@@ -33,6 +33,22 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 * _Any known issues_
 * _should go here_
 
+## Specs
+
+* Create an application that takes a number from a user and returns a range of numbers from 0 to the user input with the following exceptions **in this order of operations**:
+* Numbers that contain 3: Replace all digits with "Won't you be my neighbor?"
+* Numbers that contain 2: Replace all digits with "Boop!"
+* Numbers that contain 1: Replace all digits with "Beep!"
+* Include functionality that refreshes the form so that the user can input a number again _ad infinitum_
+* Example: a user inputs the number 45
+  * The application should return a list of values as a string or an array
+  * The values should correspond with: 0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, ... 40, Beep!, Boop!, Won't you be my neighbor, 44, 45
+
+
+## Tests
+
+
+
 ## Technologies Used
 
 * _List all_
