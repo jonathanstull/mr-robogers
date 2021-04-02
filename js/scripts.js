@@ -25,6 +25,8 @@ function convertArray(array) {
       array.splice(int, 1, "Won't you be my neighbor?");
     } else if (int.toString().includes(2)) {
       array.splice(int, 1, "Boop!");
+    } else if (int.toString().includes(1)) {
+      array.splice(int, 1, "Beep!");
     };
   });
   return array;

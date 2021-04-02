@@ -109,6 +109,12 @@ Describe: robogerize(int);
   convertArray(array);
   Expected Output: (int) [0, "Beep!", "Boop!", "Won't you be my neighbor?", ... , "Beep!", "Won't you be my neighbor?", "Beep!", ... , int - 1, int]
 
+  12. Test: "It calls createArray and convertArray and returns array with Mr. Robogers' language"
+  Code:
+  robogerize(int);
+  Expected Output: (int) [0, "Beep!", "Boop!", "Won't you be my neighbor?", ... , "Beep!", "Won't you be my neighbor?", "Beep!", ... , int - 1, int]
+
+
 
 
 ## Technologies Used
