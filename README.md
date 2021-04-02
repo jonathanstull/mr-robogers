@@ -114,6 +114,11 @@ Describe: robogerize(int);
   robogerize(int);
   Expected Output: (int) [0, "Beep!", "Boop!", "Won't you be my neighbor?", ... , "Beep!", "Won't you be my neighbor?", "Beep!", ... , int - 1, int]
 
+  13. Test: "It calls robogerize and returns a string with converted numbers"
+  Code:
+  robogerize(int);
+  Expected Output: "0, Beep! Boop! Won't you be my neighbor? ... Beep! Won't you be my neighbor? Beep! ... , int - 1, int"
+
 
 
 

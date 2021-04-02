@@ -1,6 +1,6 @@
 // Utility logic
 
-const outputArray = [];
+let outputArray = [];
 
 function createArray(int) {
   let input = parseInt(int);
@@ -34,6 +34,10 @@ function convertArray(array) {
 
 // Business logic
 
-
+function robogerize(int) {
+  outputArray = createArray(int);
+  convertArray(outputArray);
+  return outputArray.join(" ");
+};
 
 // User interface logic
