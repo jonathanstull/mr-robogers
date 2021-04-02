@@ -51,58 +51,63 @@ Describe: robogerize(int);
   1. Test: "It returns an empty string when there is no input"
   Code:
   const input = [];
-  robogerize(input);
+  createArray(int);
   Expected Output: "";
 
   2. Test: "It returns an empty array when there is no input"
   Code:
   const input = [];
-  robogerize(input);
+  createArray(int);
   Expected Output: [];
 
   3. Test: "It returns an array with the number 0 when the input is 0"
   Code:
   const input = [0];
-  robogerize(input);
+  createArray(int);
   Expected Output: [0]
 
   4. Test: "It returns an array with the number 0 and 1 when the input is 1"
   Code:
   const input = [1];
-  robogerize(input);
+  createArray(int);
   Expected Output: [0, 1]
 
   5. Test: "It returns NaN when the input is NaN"
   Code:
   let input = ["NaN"]
-  robogerize(input);
+  createArray(int);
   Expected Output: NaN
 
   6. Test: "It returns array [0, 1, 2] when the input is the string 2"
   Code:
   let input = 2;
-  robogerize(int);
+  createArray(int);
   Expected Output: [0, 1, 2]
 
   7. Test: "It returns an array that counts to zero from any integer input"
   Code:
-  robogerize(int);
+  createArray(int);
   Expected Output: (int) [0, ... , int - 1, int]
 
-  8. Test: "It returns an array that counts from zero and converts the number 3 to 'Won't you be my neighbor?'"
+  8. Test: "It returns converts the number 3 to 'Won't you be my neighbor?'"
   Code:
-  robogerize(int);
+  convertArray(array);
   Expected Output: (int) [0, 1, 2, "Won't you be my neighbor?", ... , 13, ... , int - 1, int]
 
-  9. Test: "It returns an array that counts from zero and converts any number containing 3 to 'Won't you be my neighbor?'"
+  9. Test: "It converts any number containing 3 to 'Won't you be my neighbor?'"
   Code:
-  robogerize(int);
+  convertArray(array);
   Expected Output: (int) [0, 1, 2, "Won't you be my neighbor?", ... , 12, "Won't you be my neighbor?", 14, ... , int - 1, int]
 
-  10. Test: "It returns an array that converts any number containing 2 to 'Boop!'"
+  10. Test: "It converts any number containing 2 to 'Boop!'"
   Code:
-  robogerize(int);
+  convertArray(array);
   Expected Output: (int) [0, 1, "Boop!", "Won't you be my neighbor?", ... , 12, "Won't you be my neighbor?", 14, ... , int - 1, int]
+
+  11. Test: "It returns an array that converts any number containing 1 to 'Beep!'"
+  Code:
+  convertArray(array);
+  Expected Output: (int) [0, "Beep!", "Boop!", "Won't you be my neighbor?", ... , "Beep!", "Won't you be my neighbor?", "Beep!", ... , int - 1, int]
 
 
 
