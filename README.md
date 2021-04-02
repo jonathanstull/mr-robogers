@@ -78,6 +78,12 @@ Describe: robogerize(int);
   robogerize(input);
   Expected Output: NaN
 
+  6. Test: "It returns array [0, 1, 2] when the input is the string 2"
+  Code:
+  let input = 2;
+  robogerize(input);
+  Expected Output: [0, 1, 2]
+
 
 ## Technologies Used
 
