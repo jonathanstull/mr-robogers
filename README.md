@@ -60,6 +60,12 @@ Describe: robogerize(int);
   robogerize(input);
   Expected Output: [];
 
+  3. Test: "It returns an array with the number 0 when the input is 0"
+  Code:
+  const input = [0];
+  robogerize(input);
+  Expected Output: [0]
+
 
 ## Technologies Used
 
