@@ -4,11 +4,10 @@ let input = [1];
 
 // Business logic
 
-function robogerize() {
-  let inputStr = input.toString();
+function robogerize(input) {
   let output = [];
-  if (inputStr === "") {
-    return output;
+  if (isNaN(input[0])) {
+    return "Beep boop, not a number, neighbor. Please try again.";
   } else if (input[0] === 0) {
     output.push(input[0]);
     return output;

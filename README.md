@@ -72,6 +72,12 @@ Describe: robogerize(int);
   robogerize(input);
   Expected Output: [0, 1]
 
+  5. Test: "It returns NaN when the input is NaN"
+  Code:
+  let input = ["NaN"]
+  robogerize(input);
+  Expected Output: NaN
+
 
 ## Technologies Used
 
