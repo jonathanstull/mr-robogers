@@ -47,7 +47,12 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ## Tests
 
-
+Describe: robogerize(int);
+  1. Test: "It returns an empty string when there is no input"
+  Code:
+  const int = "";
+  robogerize(int);
+  Expected Output: "";
 
 ## Technologies Used
 
