@@ -89,10 +89,21 @@ Describe: robogerize(int);
   robogerize(int);
   Expected Output: (int) [0, ... , int - 1, int]
 
-  8. Test: "It returns an array that counts from zero and converts integers with the number 3 to 'Won't you be my neighbor?'"
+  8. Test: "It returns an array that counts from zero and converts the number 3 to 'Won't you be my neighbor?'"
   Code:
   robogerize(int);
-  Expected Output: (int) [0, 1, 2, Won't you be my neighbor?, ... , int - 1, int]
+  Expected Output: (int) [0, 1, 2, "Won't you be my neighbor?", ... , 13, ... , int - 1, int]
+
+  9. Test: "It returns an array that counts from zero and converts any number containing 3 to 'Won't you be my neighbor?'"
+  Code:
+  robogerize(int);
+  Expected Output: (int) [0, 1, 2, "Won't you be my neighbor?", ... , 12, "Won't you be my neighbor?", 14, ... , int - 1, int]
+
+  10. Test: "It returns an array that converts any number containing 2 to 'Boop!'"
+  Code:
+  robogerize(int);
+  Expected Output: (int) [0, 1, "Boop!", "Won't you be my neighbor?", ... , 12, "Won't you be my neighbor?", 14, ... , int - 1, int]
+
 
 
 ## Technologies Used
