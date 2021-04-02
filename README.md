@@ -50,9 +50,16 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 Describe: robogerize(int);
   1. Test: "It returns an empty string when there is no input"
   Code:
-  const int = "";
-  robogerize(int);
+  const input = [];
+  robogerize(input);
   Expected Output: "";
+
+  2. Test: "It returns an empty array when there is no input"
+  Code:
+  const input = [];
+  robogerize(input);
+  Expected Output: [];
+
 
 ## Technologies Used
 
