@@ -19,7 +19,7 @@ function robogerize(int) {
   let input = parseInt(int);
   let outputArray = [];
   if (isNaN(input)) {
-    return "Beep boop, not a number, neighbor. Please try again.";
+    return "Beep! Boop! Not a number, neighbor. Please try again.";
   } else if (input === 0) {
     outputArray.unshift(input);
     return outputArray;

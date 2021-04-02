@@ -81,8 +81,18 @@ Describe: robogerize(int);
   6. Test: "It returns array [0, 1, 2] when the input is the string 2"
   Code:
   let input = 2;
-  robogerize(input);
+  robogerize(int);
   Expected Output: [0, 1, 2]
+
+  7. Test: "It returns an array that counts to zero from any integer input"
+  Code:
+  robogerize(int);
+  Expected Output: (int) [0, ... , int - 1, int]
+
+  8. Test: "It returns an array that counts from zero and converts integers with the number 3 to 'Won't you be my neighbor?'"
+  Code:
+  robogerize(int);
+  Expected Output: (int) [0, 1, 2, Won't you be my neighbor?, ... , int - 1, int]
 
 
 ## Technologies Used
