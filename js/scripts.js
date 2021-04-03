@@ -44,7 +44,7 @@ $(document).ready(function() {
   $("#robogerize").submit(function(event) {
     event.preventDefault();
     let int = $("#int").val();
-    const monologue = robogerize(int);
+    monologue = robogerize(int);
 
     $("#monologue").text(monologue);
 
