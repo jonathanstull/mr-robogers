@@ -51,3 +51,10 @@ $(document).ready(function() {
     $("#monologue").show();
   });
 });
+
+$(document).ready(function() {
+  $("#reset-btn").click(function() {
+    $("#monologue").empty();
+    $("#monologue").hide();
+  });
+});
